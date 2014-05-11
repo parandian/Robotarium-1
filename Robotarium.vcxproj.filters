@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="common">
+      <UniqueIdentifier>{535ca0a6-4577-4909-a07c-97e426cb7b4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\headers">
+      <UniqueIdentifier>{d5dcc5a8-cec8-4ec0-9c53-e3f869072030}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\sources">
+      <UniqueIdentifier>{6fba5a33-7fd2-4736-986b-aafd6c278469}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graphic">
+      <UniqueIdentifier>{f2bde05b-a5cc-4510-ae8d-063b620c2d3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graphic\headers">
+      <UniqueIdentifier>{6bc72f54-d30e-4a19-b38f-f62eb257b775}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graphic\sources">
+      <UniqueIdentifier>{5a49d46b-8f5e-4ff3-9df3-d0ca15abaf47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extlib">
+      <UniqueIdentifier>{2177a7e7-c709-4509-9a1d-b8c37fda464c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extlib\btOgre">
+      <UniqueIdentifier>{5003538d-dd65-4cc1-b0e2-396adbed1fa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extlib\btOgre\headers">
+      <UniqueIdentifier>{0387396b-d2ef-427d-addf-c9fbbe7810e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extlib\btOgre\sources">
+      <UniqueIdentifier>{0daf3215-1a80-4043-8037-ed7419e4cd6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math">
+      <UniqueIdentifier>{bf92e3b3-63e8-471e-b903-0c82b8965e20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math\headers">
+      <UniqueIdentifier>{418c611f-e901-40a5-9526-7d449311121c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="physics">
+      <UniqueIdentifier>{421485fe-bf4d-4100-b792-69d8b13938f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="physics\headers">
+      <UniqueIdentifier>{1fc66dfb-2dd3-47c5-b31d-3795dc464152}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="physics\sources">
+      <UniqueIdentifier>{e1555ff4-38e9-4457-9f11-de5cc0a0ffa3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\graphic\RenderEngine.cpp">
+      <Filter>graphic\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphic\Scene.cpp">
+      <Filter>graphic\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="extlibs\btOgre\MeshUtils.cpp">
+      <Filter>extlib\btOgre\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="extlibs\btOgre\BtOgreSoftBody.cpp">
+      <Filter>extlib\btOgre\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="extlibs\btOgre\BtOgre.cpp">
+      <Filter>extlib\btOgre\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphic\Camera.cpp">
+      <Filter>graphic\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\BaseObject.cpp">
+      <Filter>common\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphic\GraphicNode.cpp">
+      <Filter>graphic\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\Node.cpp">
+      <Filter>common\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphic\SceneNodeBase.cpp">
+      <Filter>graphic\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphic\SceneNode.cpp">
+      <Filter>graphic\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphic\CameraSceneNode.cpp">
+      <Filter>graphic\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphic\DebugShape.cpp">
+      <Filter>graphic\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphic\AxisDebugShape.cpp">
+      <Filter>graphic\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\physics\PhysicsWorld.cpp">
+      <Filter>physics\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\physics\RigidBody.cpp">
+      <Filter>physics\sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\common\SingletonT.hpp">
+      <Filter>common\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphic\GraphicTypes.hpp">
+      <Filter>graphic\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphic\OgreHeaders.hpp">
+      <Filter>graphic\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphic\RenderEngine.hpp">
+      <Filter>graphic\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphic\Scene.hpp">
+      <Filter>graphic\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="extlibs\btOgre\include\BtOgreExtras.h">
+      <Filter>extlib\btOgre\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="extlibs\btOgre\include\BtOgreGP.h">
+      <Filter>extlib\btOgre\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="extlibs\btOgre\include\BtOgrePG.h">
+      <Filter>extlib\btOgre\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="extlibs\btOgre\include\BtOgreSoftBody.h">
+      <Filter>extlib\btOgre\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="extlibs\btOgre\include\meshutils.h">
+      <Filter>extlib\btOgre\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="extlibs\btOgre\include\Uncopyable.h">
+      <Filter>extlib\btOgre\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphic\Camera.hpp">
+      <Filter>graphic\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\math\Math.hpp">
+      <Filter>math\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\Types.hpp">
+      <Filter>common\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\BaseObject.hpp">
+      <Filter>common\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphic\GraphicNode.hpp">
+      <Filter>graphic\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\Node.hpp">
+      <Filter>common\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Robotarium.hpp" />
+    <ClInclude Include="src\graphic\SceneNodeBase.hpp">
+      <Filter>graphic\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphic\SceneNode.hpp">
+      <Filter>graphic\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphic\CameraSceneNode.hpp">
+      <Filter>graphic\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphic\DebugShape.hpp">
+      <Filter>graphic\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphic\AxisDebugShape.hpp">
+      <Filter>graphic\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\physics\PhysicsWorld.hpp">
+      <Filter>physics\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\physics\PhysicsTypes.hpp">
+      <Filter>physics\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\physics\RigidBody.hpp">
+      <Filter>physics\headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

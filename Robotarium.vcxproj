@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="extlibs\btOgre\BtOgre.cpp" />
+    <ClCompile Include="extlibs\btOgre\BtOgreSoftBody.cpp" />
+    <ClCompile Include="extlibs\btOgre\MeshUtils.cpp" />
+    <ClCompile Include="src\common\BaseObject.cpp" />
+    <ClCompile Include="src\common\Node.cpp" />
+    <ClCompile Include="src\graphic\AxisDebugShape.cpp" />
+    <ClCompile Include="src\graphic\Camera.cpp" />
+    <ClCompile Include="src\graphic\CameraSceneNode.cpp" />
+    <ClCompile Include="src\graphic\DebugShape.cpp" />
+    <ClCompile Include="src\graphic\GraphicNode.cpp" />
+    <ClCompile Include="src\graphic\RenderEngine.cpp" />
+    <ClCompile Include="src\graphic\Scene.cpp" />
+    <ClCompile Include="src\graphic\SceneNode.cpp" />
+    <ClCompile Include="src\graphic\SceneNodeBase.cpp" />
+    <ClCompile Include="src\physics\PhysicsWorld.cpp" />
+    <ClCompile Include="src\physics\RigidBody.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="extlibs\btOgre\include\BtOgreExtras.h" />
+    <ClInclude Include="extlibs\btOgre\include\BtOgreGP.h" />
+    <ClInclude Include="extlibs\btOgre\include\BtOgrePG.h" />
+    <ClInclude Include="extlibs\btOgre\include\BtOgreSoftBody.h" />
+    <ClInclude Include="extlibs\btOgre\include\meshutils.h" />
+    <ClInclude Include="extlibs\btOgre\include\Uncopyable.h" />
+    <ClInclude Include="src\common\BaseObject.hpp" />
+    <ClInclude Include="src\common\Node.hpp" />
+    <ClInclude Include="src\common\SingletonT.hpp" />
+    <ClInclude Include="src\common\Types.hpp" />
+    <ClInclude Include="src\graphic\AxisDebugShape.hpp" />
+    <ClInclude Include="src\graphic\Camera.hpp" />
+    <ClInclude Include="src\graphic\CameraSceneNode.hpp" />
+    <ClInclude Include="src\graphic\DebugShape.hpp" />
+    <ClInclude Include="src\graphic\GraphicNode.hpp" />
+    <ClInclude Include="src\graphic\GraphicTypes.hpp" />
+    <ClInclude Include="src\graphic\OgreHeaders.hpp" />
+    <ClInclude Include="src\graphic\RenderEngine.hpp" />
+    <ClInclude Include="src\graphic\Scene.hpp" />
+    <ClInclude Include="src\graphic\SceneNode.hpp" />
+    <ClInclude Include="src\graphic\SceneNodeBase.hpp" />
+    <ClInclude Include="src\math\Math.hpp" />
+    <ClInclude Include="src\physics\PhysicsTypes.hpp" />
+    <ClInclude Include="src\physics\PhysicsWorld.hpp" />
+    <ClInclude Include="src\physics\RigidBody.hpp" />
+    <ClInclude Include="src\Robotarium.hpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{78187EA5-1E8F-4009-86D6-4DA6DC5EE23C}</ProjectGuid>
+    <RootNamespace>Robotarium</RootNamespace>
+    <ProjectName>Robotarium</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="Paths.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="Paths.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)\bin\$(Configuration)\</OutDir>
+    <TargetExt>.lib</TargetExt>
+    <IntDir>$(SolutionDir)\intermediate\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetExt>.lib</TargetExt>
+    <OutDir>$(SolutionDir)\bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\intermediate\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(OGRE_ROOT)include;$(OGRE_ROOT)include\OIS;$(OGRE_ROOT)include\OGRE;$(OGRE_ROOT)Samples\Common\include;$(BOOST_ROOT);$(BULLET_ROOT)\src;$(BULLET_ROOT)\Extras\ConvexDecomposition;$(BULLET_ROOT)\src\BulletCollision;$(SolutionDir)extlibs\btOgre\include;$(SolutionDir)src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>OgreMain_d.lib;BulletCollision_vs2010_debug.lib;BulletDynamics_vs2010_debug.lib;BulletSoftBody_vs2010_debug.lib;LinearMath_vs2010_debug.lib;ConvexDecomposition_vs2010_debug.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OGRE_ROOT)\lib\$(Configuration);$(OGRE_ROOT)\boost\lib;$(BULLET_ROOT)\lib;$(BOOST_ROOT)bin.v2\libs\thread\build\msvc-10.0\$(Configuration)\link-static\threading-multi</AdditionalLibraryDirectories>
+      <OutputFile>$(SolutionDir)bin\$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level1</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(OGRE_ROOT)include;$(OGRE_ROOT)include\OIS;$(OGRE_ROOT)include\OGRE;$(OGRE_ROOT)Samples\Common\include;$(BOOST_ROOT);$(BULLET_ROOT)\src\;$(BULLET_ROOT)\Extras\ConvexDecomposition;$(BULLET_ROOT)\src\BulletDynamics;$(BULLET_ROOT)\src\BulletCollision;$(SolutionDir)extlibs\btOgre\include;$(SolutionDir)src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>_USRDLL</PreprocessorDefinitions>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(SolutionDir)bin\$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>$(OGRE_ROOT)\lib\$(Configuration);$(OGRE_ROOT)\boost\lib;$(BULLET_ROOT)\lib;$(BOOST_ROOT)bin.v2\libs\thread\build\msvc-10.0\release\link-static\threading-multi</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OgreMain.lib;BulletCollision_vs2010.lib;BulletDynamics_vs2010.lib;BulletSoftBody_vs2010.lib;LinearMath_vs2010.lib;ConvexDecomposition_vs2010.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>true</UseLibraryDependencyInputs>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
